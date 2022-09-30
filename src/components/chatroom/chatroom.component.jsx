@@ -1,11 +1,17 @@
 import React from 'react'
-import './chatroom.styles.scss'
+import Message from '../message/message.component'
+import MessageInput from '../message-input/message-input.component'
+import {
+    ChatRoomContainer,
+} from "./chatroom.styles.js";
 
 const ChatRoom = () => {
     return (
-        <div className="chat-room-container">
+        <ChatRoomContainer>
             <h3> This the chat room container.</h3>
-        </div>
+            <Message />
+            <MessageInput />
+        </ChatRoomContainer>
     )
 }
 
