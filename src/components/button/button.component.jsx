@@ -1,12 +1,14 @@
-import React from 'react'
+import './button.styling.scss';
 
-const Button = () => {
+const Button = ({ children, buttonType, ...otherProps }) => {
     return (
-        <div className="button-container">
-            <button type="submit">Login Here</button>
+        <div className={"button-container"} {...otherProps}>
+            <button type="submit">
+                {children}
+            </button>
         </div>
-    )
-}
+    );
+};
 
 
 

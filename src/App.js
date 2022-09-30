@@ -5,17 +5,18 @@ import Login from './components/login/login.component.jsx'
 
 function App() {
 
-  const user = false;
+  const user = true;
 
   return (
     <div className="App-container">
       <h2> Welcome to the Chatroom</h2>
       {
-        user ? (
-          <ChatRoom />
-        ) : (
-          <Login />
-        )
+        user ?
+          (
+            <ChatRoom />
+          ) : (
+            <Login />
+          )
       }
 
 
